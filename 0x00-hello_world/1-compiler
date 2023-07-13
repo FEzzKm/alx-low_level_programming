@@ -1,2 +1,4 @@
 #!/bin/bash
-gcc -c "$CFILE.c" -o "$CFILE.o"
+INPT="$CFILE.c"
+OTPT="${OTPT%.c}
+gcc -c "$INPT.c" -o "$OTPT.o"
