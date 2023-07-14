@@ -1,6 +1,8 @@
 #include <stdio.h>
 /**
- * C program that prints exactly a sentence with puts
+ * main entry void
+ *
+ * description print a sentence using puts
  *
  * return 0
  */
