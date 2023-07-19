@@ -1,13 +1,11 @@
 #include "main.h"
 
 /**
- * main - check the code
  *
  * Description: prints the alphabet in lowercase followed by a new line
  *
  * print_alphabet - uses putchar to print a to z
  *
- * Return: Always 0.
  *
  **/
 
