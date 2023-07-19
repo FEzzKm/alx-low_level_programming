@@ -3,7 +3,7 @@
  * _islower - function to check if
  *	c is lowercase
  *
- * Description: check input of function
+ * c: check input of function
  *	if lowercase
  *
  * Return: returns 1 if so else 0
