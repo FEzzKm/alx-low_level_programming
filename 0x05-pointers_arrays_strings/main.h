@@ -16,6 +16,6 @@ void print_square(int size);
 void print_triangle(int size);
 void _puts(char *str);
 void print_rev(char *s);
-
+void rev_string(char *s);
 
 #endif /* MAIN_H */
