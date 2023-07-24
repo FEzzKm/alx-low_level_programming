@@ -15,5 +15,7 @@ void print_diagonal(int n);
 void print_square(int size);
 void print_triangle(int size);
 void _puts(char *str);
+void print_rev(char *s);
+
 
 #endif /* MAIN_H */
