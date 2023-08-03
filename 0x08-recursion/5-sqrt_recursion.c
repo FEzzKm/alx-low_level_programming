@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
  * _sqrt_recursion - a function that does the recursion bit
  *
