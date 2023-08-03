@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * _sqrt_recursion - a function that does the recursion bit
  *
@@ -11,15 +13,16 @@
 int square(int n, int v);
 int _sqrt_recursion(int n)
 {
-	if (n == 1)		/*sqrt(1) == 1*/
-		return (1);
-	else if (n == 0)	/*sqrt(0) == 0*/
-		return (0);
-	else if (n < 0)		/*sqrt(-n) == -1 (NA)*/
-		return (-1);
-	else
-		return (square(n, 1));
+	return (square(n, 1));
 }
+/**
+ * square - square root 
+ * @n : int for sqrt root finding
+ * @v : sqrt root
+ * return int
+ *
+*/
+
 int square(int n, int v)
 {
 	if ( v * v == n)
