@@ -23,9 +23,11 @@ int _sqrt_recursion_wrapper(int n, int min, int max)
 	else
 		return (_sqrt_recursion_wrapper(n, min, guess - 1));
 }
-/** _sqrt_recursion - returns sqrt of int n
+/**
+ * _sqrt_recursion - returns sqrt of int n
  *
- */
+ *
+*/
 
 int _sqrt_recursion(int n)
 {
