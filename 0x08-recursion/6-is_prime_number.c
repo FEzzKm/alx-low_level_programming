@@ -5,10 +5,11 @@
  * @o: int
  * @n: int
  * return 0 or 1
+ * is_prime - check if prime
 */
 
-int is_prime (int n, int o);
-int is_prime_number (int n)
+int is_prime(int n, int o);
+int is_prime_number(int n)
 {
 	return (is_prime(n, 2));
 }
@@ -17,7 +18,7 @@ int is_prime_number (int n)
  * is_prime - check all int < n if prime
  * @n: int
  * @o: int
- * return int
+ * return :  int
 */
 
 int is_prime(int n, int o)
