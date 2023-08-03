@@ -7,25 +7,31 @@
  *
  * Return: square root of @n or -1
 */
-int _sqrt_recursive(int n, int start, int end) {
-    if (start <= end) {
-        int mid = (start + end) / 2;
-        int square = mid * mid;
+int _sqrt_recursion_wrapper(int n, int min, int max)
+{
+	int guess, guess_squared;
 
-        if (square == n)
-            return mid;
-        else if (square < n)
-            return _sqrt_recursive(n, mid + 1, end);
-        else
-            return _sqrt_recursive(n, start, mid - 1);
-    }
+	guess = (min + max) / 2;		/*get guess (g)*/
+	guess_squared = guess * guess;		/*square guess (sg)*/
 
-    return -1; // If no natural square root found, return -1.
+	if (guess_squared == n)
+		return (guess);
+	else if (min == max)
+		return (-1);
+	else if (guess_squared < n)
+		return (_sqrt_recursion_wrapper(n, guess + 1, max));
+	else
+		return (_sqrt_recursion_wrapper(n, min, guess - 1));
 }
 
-int _sqrt_recursion(int n) {
-    if (n < 0)
-        return -1; // Negative numbers don't have a natural square root.
-
-    return _sqrt_recursive(n, 0, n);
+int _sqrt_recursion(int n)
+{
+	if (n == 1)		/*sqrt(1) == 1*/
+		return (1);
+	else if (n == 0)	/*sqrt(0) == 0*/
+		return (0);
+	else if (n < 0)		/*sqrt(-n) == -1 (NA)*/
+		return (-1);
+	else
+		return (_sqrt_recursion_wrapper(n, 1, n));
 }
