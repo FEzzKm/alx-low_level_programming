@@ -7,7 +7,6 @@
  * return 0 or 1
  * is_prime - check if prime
 */
-
 int is_prime(int n, int o);
 int is_prime_number(int n)
 {
@@ -21,7 +20,7 @@ int is_prime_number(int n)
  * return :  int
 */
 
-int is_prime(int n, int o)
+int is_prime(int n, int o)	/* return : int */
 {
 	if (o >= n && n > 1)
 		return (1);
