@@ -6,6 +6,7 @@
  * @n: int
  * return 0 or 1
  * is_prime - check if prime
+ * Return : int
 */
 int is_prime(int n, int o);
 int is_prime_number(int n)
@@ -17,7 +18,7 @@ int is_prime_number(int n)
  * is_prime - check all int < n if prime
  * @n: int
  * @o: int
- * return :  int
+ * Return :  int
 */
 
 int is_prime(int n, int o)	/* return : int */
