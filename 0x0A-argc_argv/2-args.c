@@ -14,18 +14,10 @@
 int main(int argc, char *argv[])
 {
 	int c;
-	printf("%s\n", argv[0]);
+	
+	for (c = 1; c < argc ,c++)
 
-	if(argc > 1)
-	{
-		for (c = 1; c < argc ,c++)
-		{
-			printf("argv[%d] = %s\n", c ,argv[c]);
-		}
-	}
-	else
-	{
-		printf("no args \n");
-	}
+		printf("%s\n", argv[c]);
+		
 	return (0);
 }
