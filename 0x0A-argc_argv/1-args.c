@@ -20,6 +20,6 @@ int main(int argc, char __attribute__((unused)) *argv[])
 		i++;
 	}
 
-	printf("%s\n", m);
+	printf("%d\n", m);
 	return (0);
 }
